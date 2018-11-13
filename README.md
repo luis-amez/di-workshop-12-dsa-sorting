@@ -1,6 +1,6 @@
 # Workshop: Sorting Algorithms 🔀
 
-As with previous workships, you should fork this repo and then complete the bold questions below.
+As with previous workshops, you should fork this repo and then complete the bold questions below.
 
 **Remember, it's about exploration and understanding. Take your time!Don't move on until you fully understand what's happening.**
 

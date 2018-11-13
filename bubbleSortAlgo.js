@@ -1,5 +1,6 @@
 function bubbleSort(a) {
   var swapped;
+  let start = Date.now();
   do {
     swapped = false;
     for (var i=0; i < a.length-1; i++) {
@@ -11,9 +12,13 @@ function bubbleSort(a) {
         }
     }
   } while (swapped);
+  let end = Date.now();
+  console.log(`Start: ${new Date(start)}.\nEnd: ${new Date(end)}.\nSeconds spent: ${(end - start) / 1000}`);
 }
 
-var ary = [34, 203, 3, 746, 200, 984, 198, 764, 9];
+const generateRandomNumbers = require('./generateArrayOfRandomNumbers');
 
-bubbleSort(ary);
-console.log(ary);
+var randomNumbers = generateRandomNumbers(1000000, 1000000);
+
+bubbleSort(randomNumbers);
+// console.log(randomNumbers);
